@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-// A função ft_bzero coloca o caracter nulo \0 em cada posição da memoria
+// A função ft_bzero coloca o caracter nulo \0 em cada posição da memória
 // de uma dada variável, seja ela o tipo que for até o número de bytes informado
 // por size_t n.
 
