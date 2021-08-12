@@ -1,34 +1,30 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strnstr.c                                       :+:      :+:    :+:   */
+/*   ft_memccpy.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: shenriqu <shenriqu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/08/09 19:22:51 by shenriqu          #+#    #+#             */
-/*   Updated: 2021/08/11 21:42:44 by shenriqu         ###   ########.fr       */
+/*   Created: 2021/08/11 22:33:25 by shenriqu          #+#    #+#             */
+/*   Updated: 2021/08/11 22:33:26 by shenriqu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strnstr(const char *desert, const char *grain, size_t len)
+void	*ft_memccpy(void *dst, const void *src, int c, size_t n)
 {
-	size_t	amountOfGrain;
+	size_t	i;
 
-	if (!(*grain) || !(*desert))
-		return ((char *)desert);
-	if ((char *)grain == NULL || (char *)desert == NULL)
+	if (!dst || !src)
 		return (NULL);
-	amountOfGrain = ft_strlen((char *)grain);
-	if (!desert || !grain)
-		return ((char *)desert);
-	while (*desert && len && len-- >= amountOfGrain)
+	i = 0;
+	while (i < n)
 	{
-		if (!ft_strncmp(desert, grain, amountOfGrain))
-			return ((char *)desert);
-		else
-			++desert;
+		*(unsigned char *)(dst + i) = *(unsigned char *)(src + i);
+		if (*(unsigned char *)(src + i) == (unsigned char)c)
+			return (dst + i + 1);
+		i++;
 	}
 	return (NULL);
 }

@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: shenriqu <shenriqu@student.42.fr>          +#+  +:+       +#+         #
+#    By: sergio <sergio@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/08/09 20:33:28 by shenriqu          #+#    #+#              #
-#    Updated: 2021/08/09 21:12:58 by shenriqu         ###   ########.fr        #
+#    Updated: 2021/08/12 07:51:23 by sergio           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -27,7 +27,18 @@ FILES = ft_atoi.c \
 		ft_strrchr.c \
 		ft_tolower.c \
 		ft_toupper.c \
-		ft_strnstr.c
+		ft_strnstr.c \
+		ft_strncmp.c \
+		ft_strlcpy.c \
+		ft_strlcat.c \
+		ft_memcmp.c \
+		ft_memchr.c \
+		ft_memccpy.c \
+		ft_memmove.c \
+		ft_strdup.c \
+		ft_calloc.c \
+		ft_itoa.c
+
 OBJFILES = $(FILES:%.c=%.o)
 
 all: $(NAME)
