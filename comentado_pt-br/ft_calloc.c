@@ -10,8 +10,9 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-// A função ft_calloc aloca espaço receber um dado número de variáveis com
-// determinado número referente ao tamanho em bytes (size) dessas variáveis.
+// A função ft_calloc aloca espaço na memória para receber um dado número de 
+// variáveis com determinado número referente ao tamanho em bytes (size) dessas 
+// variáveis.
 // Diferentemente da função malloc() que também faz isso, a calloc() o faz
 // preenchendo com \0 em todos os bits. Prevenindo assim, ler espaços de memória
 // com "lixo de memória".
