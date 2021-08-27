@@ -10,10 +10,23 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+// A função memmove copia um dado número de bytes len de src para dst
+// indicados por seus ponteiros. A cópia é feita numa variável temporária para
+// não sobrescrever o próprio dst.
+// ex: Copiar o trecho "escrever" para o inicio da string 
+//
+//				*src:		  "Sobrescrever"
+// 				antes:		  	   [------]
+//				depois:   	   [------]	 
+//				*dst:		  "escreverever"
+//							Ocupam os mesmos bytes
+// O retorno é dst.
+
 #include "libft.h"
 
 void	*ft_memmove(void *dst, const void *src, size_t len)
 {
+	// variável temporária para não sobrescrever dst antes da hora.
 	unsigned char	*pd;
 
 	pd = (unsigned char *)dst;
