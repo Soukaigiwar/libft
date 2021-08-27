@@ -10,6 +10,10 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+// A função memcmp() compara os primeiros bytes n (representados como unsigned
+// char) das posições da memória fornecidas pelos ponteiros *str1 e *str2.
+// A comparaç
+
 #include "libft.h"
 
 int	ft_memcmp(const void *str1, const void *str2, size_t n)
