@@ -6,26 +6,27 @@
 /*   By: shenriqu <shenriqu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/11 21:48:21 by shenriqu          #+#    #+#             */
-/*   Updated: 2021/08/11 21:48:22 by shenriqu         ###   ########.fr       */
+/*   Updated: 2021/08/20 18:59:34 by shenriqu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t	ft_strlcat(char	*dst, const char	*src, size_t	dstsize)
+size_t	ft_strlcat(char *dst, const char *src, size_t size)
 {
-	size_t	dst_len;
-	size_t	src_len;
+	size_t	dst_size;
+	size_t	src_size;
 
-	src_len = (ft_strlen((char *)src));
-	dst_len = 0;
-	while (dst[dst_len] && dst_len < dstsize)
-		++dst_len;
-	if (dstsize == dst_len)
-		return (src_len + dstsize);
-	dst += dst_len;
-	while (--dstsize > dst_len && *src)
-		*(dst++) = *(src++);
-	*dst = '\0';
-	return (dst_len + src_len);
+	dst_size = 0;
+	src_size = 0;
+	while (dst[dst_size] && dst_size < size)
+		dst_size++;
+	while ((src[src_size]) && ((dst_size + src_size + 1) < size))
+	{
+		dst[dst_size + src_size] = src[src_size];
+		src_size++;
+	}
+	if (dst_size != size)
+		dst[dst_size + src_size] = '\0';
+	return (dst_size + ft_strlen(src));
 }

@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: sergio <sergio@student.42.fr>              +#+  +:+       +#+         #
+#    By: shenriqu <shenriqu@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/08/09 20:33:28 by shenriqu          #+#    #+#              #
-#    Updated: 2021/08/12 07:51:23 by sergio           ###   ########.fr        #
+#    Updated: 2021/08/27 18:08:34 by shenriqu         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -33,11 +33,17 @@ FILES = ft_atoi.c \
 		ft_strlcat.c \
 		ft_memcmp.c \
 		ft_memchr.c \
-		ft_memccpy.c \
 		ft_memmove.c \
 		ft_strdup.c \
 		ft_calloc.c \
-		ft_itoa.c
+		ft_substr.c \
+		ft_putchar_fd.c \
+		ft_putendl_fd.c \
+		ft_putstr_fd.c \
+		ft_strjoin.c \
+		ft_strmapi.c \
+		ft_itoa.c \
+		ft_strtrim.c 
 
 OBJFILES = $(FILES:%.c=%.o)
 

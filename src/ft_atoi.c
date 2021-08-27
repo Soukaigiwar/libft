@@ -6,7 +6,7 @@
 /*   By: shenriqu <shenriqu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/09 20:32:05 by shenriqu          #+#    #+#             */
-/*   Updated: 2021/08/11 21:35:10 by shenriqu         ###   ########.fr       */
+/*   Updated: 2021/08/16 16:00:24 by shenriqu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,9 +22,9 @@ int	ft_isspace(char c)
 
 int	ft_atoi(const char *nptr)
 {
-	long	result;
-	int		sign;
-	int		i;
+	long			result;
+	long			sign;
+	unsigned int	i;
 
 	result = 0;
 	sign = 1;

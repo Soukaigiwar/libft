@@ -6,7 +6,7 @@
 /*   By: shenriqu <shenriqu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/09 20:32:58 by shenriqu          #+#    #+#             */
-/*   Updated: 2021/08/09 21:12:12 by shenriqu         ###   ########.fr       */
+/*   Updated: 2021/08/25 23:17:49 by shenriqu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,16 +14,16 @@
 
 char	*ft_strrchr(const char	*s, int	c)
 {
-	char	*ps;
+	char	*str;
 
-	ps = NULL;
+	str = NULL;
 	while (*s)
 	{
 		if (*s == (char)c)
-			ps = (char *)s;
-		++s;
+			str = (char *)s;
+		s++;
 	}
 	if (*s == (char)c)
-		ps = (char *)s;
-	return (ps);
+		str = (char *)s;
+	return (str);
 }
