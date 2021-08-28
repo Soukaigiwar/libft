@@ -10,9 +10,15 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+// A função ft_toupper converte caracteres passados em int c de minúsculo para 
+// maiúsculo.
+// O retorno é o inteiro c que representa o caracter na tabela ascii.
+
 int	ft_toupper(int c)
 {
+	// verifica se o caracter passado é letra minúscula
 	if (c >= 97 && c <= 122)
+		// subtrai 32 para cair na mesma letra da tabela ascii, agora maiúsucula.
 		c -= 32;
 	return (c);
 }
