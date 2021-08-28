@@ -30,6 +30,7 @@ void	*ft_memmove(void *dst, const void *src, size_t len)
 	unsigned char	*pd;
 
 	pd = (unsigned char *)dst;
+	//testa se dst é maior (ocupa mais bytes) que src.
 	if (dst > src)
 	{
 		while (len--)
