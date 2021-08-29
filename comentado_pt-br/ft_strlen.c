@@ -10,12 +10,16 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+// A função ft_strlen calcula o comprimento da string s, excluindo o byte nulo.
+
 int	ft_strlen(char *c)
 {
 	int	i;
 
 	i = 0;
-	while (*c++ != '\0')
+	// percorre o char a partir do inicio dado pelo *c até chegar no caracter
+	// nulo '\0'
+	while (*(unsigned char *)c++)
 		i++;
 	return (i);
 }
