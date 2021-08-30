@@ -17,7 +17,7 @@ int	ft_strlen(char *c)
 	int	i;
 
 	i = 0;
-	// percorre o char a partir do inicio dado pelo *c até chegar no caracter
+	// percorre o char a partir do início dado pelo *c até chegar no caracter
 	// nulo '\0'
 	while (*(unsigned char *)c++)
 		i++;
